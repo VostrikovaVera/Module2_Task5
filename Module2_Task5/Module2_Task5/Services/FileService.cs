@@ -27,7 +27,7 @@ namespace Module2_Task5.Services
                             oldestFileCreationTime = currentFileCrationTime;
                         }
 
-                        oldestFileInfo.Delete();
+                        File.Delete($"{directoryPath}/{oldestFileInfo.Name}");
                     }
                 }
 
